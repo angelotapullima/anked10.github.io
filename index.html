@@ -373,9 +373,11 @@
                         <div class="d-flex h-100">
                             <div class="project-text w-100 my-auto text-center text-lg-left">
                                 <h4 class="text-black">EXCESO DE RADIACIÓN EN EL THERAC-25 MATÓ A CINCO PACIENTES.</h4>
-                                <p class="mb-0 text-black-50">El del Mariner I, una sonda espacial que se dirigía a Venus, se desvió de la trayectoria de vuelo prevista 
-                                    poco después del lanzamiento. Desde control se destruyó la sonda a los 293 segundos del despegue. La causa fue una fórmula manuscrita 
-                                    que se programó incorrectamente.</p>
+                                <p class="mb-0 text-black-50">Uno de los fallos más grandes de software que se recuerdan fue el que afectó al acelerador lineal médico modelo
+                                     Therac-25. Esta máquina -que costaba 1 millón de dólares- se usaba para tratar a pacientes de cáncer con radioterapia y, debido a un error de 
+                                     software, costó la vida a 6 personas entre los años 1985 y 1987.
+                                     
+                                     Lo que ocurrió es que, debido a un fallo en el software de control, en ocasiones se exponía a los pacientes al haz de alta intensidad sin la protección intermedia de la placa metálica, causando una exposición a dosis letales de radiación (100 veces mayores de lo esperado) y acabando con la vida de estos meses más tarde. Los anteriores modelos tenían un control mecánico y por hardware que detectaba si estaba o no puesta la placa impidiendo activar el haz de alta intensidad si no era así. En el Therac-25 esto se dejó al criterio del software, que no detectaba bien esto debido a una condición de carrera en el programa. Para simplificarlo digamos que si el operador humano era muy rápido dándole al teclado, como había un contador de 1 byte que desbordaba, si la orden coincidía con ese momento no se detectaba la ausencia de la placa y se lanzaba el haz igual.</p>
                                 <hr class="d-none d-lg-block mb-0 ml-0" />
                             </div>
                         </div>
@@ -394,7 +396,7 @@
                                      que por un error en su software de control suministró un exceso de radiación a varios pacientes provocando la muerte de al menos cinco de ellos.
 
                                     La causa está en errores en el control de la concurrencia de las diferentes rutinas que se ejecutaban en paralelo, entre ellos un problema “clásico”, 
-                                    una race condition que inducía la máquina a emitir radiación a potencia máxima si una determinada secuencia de eventos inesperados se producía..</p>
+                                    una race condition que inducía la máquina a emitir radiación a potencia máxima si una determinada secuencia de eventos inesperados se producía.</p>
                                 <hr class="d-none d-lg-block mb-0 mr-0" />
                             </div>
                         </div>
